@@ -12,10 +12,10 @@
 #include <vector>
 namespace pr {
     class OrExpression : public Expression {
-        std::unique_ptr<Expression> leftOperand;
-        std::unique_ptr<Expression> rightOperand;
+        std::shared_ptr<Expression> leftOperand;
+        std::shared_ptr<Expression> rightOperand;
     public:
-        OrExpression(std::unique_ptr<Expression> leftOperand_, std::unique_ptr<Expression> rightOperand_);
+        OrExpression(std::shared_ptr<Expression> leftOperand_, std::shared_ptr<Expression> rightOperand_);
         ~OrExpression() {};
 
         bool evaluate() const override;

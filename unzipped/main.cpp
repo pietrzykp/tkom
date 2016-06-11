@@ -46,9 +46,9 @@ int main() {
                                  "}\n"
                                  "}\n"
                                  "}\n");*/
-    Parser p(std::unique_ptr<CppScanner>(new CppScanner(fs)));
+    Parser p(std::shared_ptr<CppScanner>(new CppScanner(fs)));
     try {
-        std::unique_ptr<Expression> e = p.parse();
+        std::shared_ptr<Expression> e = p.parse();
         cout<<e->toString()<<endl;
     } catch(std::runtime_error err) {
         cout<<err.what();

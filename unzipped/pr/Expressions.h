@@ -12,9 +12,9 @@
 
 namespace pr {
     class Expressions : public Expression {
-        std::vector<std::unique_ptr<Expression> > expressions;
+        std::vector<std::shared_ptr<Expression> > expressions;
     public:
-        Expressions(std::vector<std::unique_ptr<Expression> > vec) : expressions(std::move(vec)) {};
+        Expressions(std::vector<std::shared_ptr<Expression> > vec) : expressions(std::move(vec)) {};
         ~Expressions() {};
 
         bool evaluate() const override {};

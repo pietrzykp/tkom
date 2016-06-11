@@ -17,7 +17,7 @@ std::string pr::ForExpression::toString() const {
 }
 
 bool pr::ForExpression::evaluate() {
-    /*if(paramNames.size() != lists.size())
+    if(paramNames.size() != lists.size())
         return false;
     for(int i = 0; i < lists.size(); ++i) {
         lists[i] = lists[i]->getNonSearchValue();
@@ -33,7 +33,7 @@ bool pr::ForExpression::evaluate() {
             VariableStack::putValue(lists[j]->getByIndex(i), paramNames[j]);
         expressions->evaluate();
         VariableStack::lowerLevel();
-    }*/
+    }
     return true;
 }
 

@@ -6,7 +6,7 @@
 using namespace pr;
 
 
-AndExpression::AndExpression(std::unique_ptr<Expression> leftOperand_, std::unique_ptr<Expression> rightOperand_) :
+AndExpression::AndExpression(std::shared_ptr<Expression> leftOperand_, std::shared_ptr<Expression> rightOperand_) :
         leftOperand(std::move(leftOperand_)), rightOperand(std::move(rightOperand_)) { }
 
 bool AndExpression::evaluate() const {

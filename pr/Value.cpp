@@ -48,7 +48,7 @@ std::string Value::getSingleValue() {
 
 std::shared_ptr<Value> Value::getNonSearchValue() {
     if(!searchValue)
-        return nullptr;
+        return shared_from_this();
     return
         VariableStack::getValue(value)->getNonSearchValue();
 }

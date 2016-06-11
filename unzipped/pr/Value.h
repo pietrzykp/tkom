@@ -26,6 +26,6 @@ namespace pr {
     };
 }
 
-extern std::unordered_map<std::string, std::unique_ptr<pr::Value>> variables;
+extern std::unordered_map<std::string, std::shared_ptr<pr::Value>> variables;
 
 #endif //TKOM2_VALUE_H

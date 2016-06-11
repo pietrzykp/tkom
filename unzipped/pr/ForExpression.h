@@ -14,9 +14,9 @@ namespace pr {
     class ForExpression: public Expression {
         std::vector<std::string> paramNames;
         std::vector<std::shared_ptr<Value> > lists;
-        std::unique_ptr<Expressions> expressions;
+        std::shared_ptr<Expressions> expressions;
     public:
-        ForExpression(std::vector<std::string> names_, std::vector<std::shared_ptr<Value> > lists_, std::unique_ptr<Expressions> expr_)
+        ForExpression(std::vector<std::string> names_, std::vector<std::shared_ptr<Value> > lists_, std::shared_ptr<Expressions> expr_)
                 : paramNames(names_), lists(std::move(lists_)), expressions(std::move(expr_)) {};
         ~ForExpression() {};
 

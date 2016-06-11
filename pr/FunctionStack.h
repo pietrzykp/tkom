@@ -6,7 +6,6 @@
 #define TKOM2_FUNCTIONSTACK_H
 
 #include <string>
-#include <bits/unique_ptr.h>
 #include "FunctionDeclaration.h"
 
 namespace pr {

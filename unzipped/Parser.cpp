@@ -16,10 +16,10 @@
 #include <sstream>
 
 using std::string;
-Parser::Parser(std::unique_ptr<CppScanner> sc) : scanner(std::move(sc)) {}
+Parser::Parser(std::shared_ptr<CppScanner> sc) : scanner(std::move(sc)) {}
 
 
-std::unique_ptr<Expression> Parser::parse() {
+std::shared_ptr<Expression> Parser::parse() {
     Token t;
     do {
         try {
@@ -37,15 +37,15 @@ std::unique_ptr<Expression> Parser::parse() {
     return readExpressions();
 }
 
-std::unique_ptr<Expression> Parser::readExpressions() {
-    std::vector<std::unique_ptr<Expression> > expressions;
+std::shared_ptr<Expression> Parser::readExpressions() {
+    std::vector<std::shared_ptr<Expression> > expressions;
     while(!checkTokenType(Token::Type::EOF_IDENT)) {
         expressions.push_back(std::move(readExpression()));
     }
-    return std::unique_ptr<Expressions>(new Expressions(std::move(expressions)));
+    return std::shared_ptr<Expressions>(new Expressions(std::move(expressions)));
 }
 
-std::unique_ptr<Expression> Parser::readExpression() {
+std::shared_ptr<Expression> Parser::readExpression() {
     Token token = getToken();
     switch (token.getType()) {
         case Token::Type::IF :
@@ -89,17 +89,17 @@ bool Parser::checkTokenType(Token::Type type) const {
     return readTokens[index].getType() == type;
 }
 
-std::unique_ptr<IfExpression> Parser::readIfExpression() {
+std::shared_ptr<IfExpression> Parser::readIfExpression() {
     requireToken(Token::Type::ROUND_BRACKET_LEFT);
     getNextToken();
-    std::unique_ptr<Expression> expr = readCompOrInsideIf();
+    std::shared_ptr<Expression> expr = readCompOrInsideIf();
     expr = readAndExpression(std::move(expr));
     expr = readOrExpression(std::move(expr));
     requireToken(Token::Type::ROUND_BRACKET_RIGHT);
     getNextToken();
 
-    std::unique_ptr<Expressions> expressions;
-    std::unique_ptr<IfExpression> elseExpr = nullptr;
+    std::shared_ptr<Expressions> expressions;
+    std::shared_ptr<IfExpression> elseExpr = nullptr;
 
     bool additionalBracket = checkTokenType(Token::Type::CURLY_BRACKET_LEFT);
     expressions = getBracketExpressions();
@@ -118,22 +118,22 @@ std::unique_ptr<IfExpression> Parser::readIfExpression() {
             elseExpr = readIfExpression();
         } else {
             additionalBracket = checkTokenType(Token::Type::CURLY_BRACKET_LEFT);
-            std::unique_ptr<Expressions> bracket = getBracketExpressions();
+            std::shared_ptr<Expressions> bracket = getBracketExpressions();
             if(additionalBracket) {
                 if (checkTokenType(Token::Type::CURLY_BRACKET_RIGHT))
                     getNextToken();
                 else
                     throwUnexpextedToken(Token::Type::CURLY_BRACKET_RIGHT);
             }
-            elseExpr = std::unique_ptr<IfExpression>(new IfExpression(nullptr, std::move(bracket), nullptr));
+            elseExpr = std::shared_ptr<IfExpression>(new IfExpression(nullptr, std::move(bracket), nullptr));
         }
     }
-    return std::unique_ptr<IfExpression>(new IfExpression(std::move(expr), std::move(expressions), std::move(elseExpr)));
+    return std::shared_ptr<IfExpression>(new IfExpression(std::move(expr), std::move(expressions), std::move(elseExpr)));
 }
 
 
-std::unique_ptr<Expressions> Parser::getBracketExpressions(){
-    std::vector<std::unique_ptr<Expression> > expressions;
+std::shared_ptr<Expressions> Parser::getBracketExpressions(){
+    std::vector<std::shared_ptr<Expression> > expressions;
     if(checkTokenType(Token::Type::CURLY_BRACKET_LEFT)) {
         getNextToken();
         while(!checkTokenType(Token::Type::CURLY_BRACKET_RIGHT)) {
@@ -142,10 +142,10 @@ std::unique_ptr<Expressions> Parser::getBracketExpressions(){
     } else {
         expressions.push_back(std::move(readExpression()));
     }
-    return std::unique_ptr<Expressions>(new Expressions(std::move(expressions)));
+    return std::shared_ptr<Expressions>(new Expressions(std::move(expressions)));
 }
 
-std::unique_ptr<Expression> Parser::readVariableDeclaration() {
+std::shared_ptr<Expression> Parser::readVariableDeclaration() {
     getNextToken();
     requireToken(Token::Type::IDENTIFIER);
     string label = getToken().getContent();
@@ -156,10 +156,10 @@ std::unique_ptr<Expression> Parser::readVariableDeclaration() {
     getNextToken();
     requireToken(Token::Type::SEMICOLON);
     getNextToken();
-    return std::unique_ptr<VariableDeclaration>(new VariableDeclaration(label, std::move(val)));
+    return std::shared_ptr<VariableDeclaration>(new VariableDeclaration(label, std::move(val)));
 }
 
-std::unique_ptr<Expression> Parser::readFunctionDeclaration() {
+std::shared_ptr<Expression> Parser::readFunctionDeclaration() {
     getNextToken();
     requireToken(Token::Type::IDENTIFIER);
     string label = getToken().getContent();
@@ -177,10 +177,10 @@ std::unique_ptr<Expression> Parser::readFunctionDeclaration() {
     }
     getNextToken();
     requireToken(Token::Type::CURLY_BRACKET_LEFT);
-    std::unique_ptr<Expressions> expressions = getBracketExpressions();
+    std::shared_ptr<Expressions> expressions = getBracketExpressions();
     requireToken(Token::Type::CURLY_BRACKET_RIGHT);
     getNextToken();
-    return std::unique_ptr<FunctionDeclaration>(new FunctionDeclaration(label, paramsNames, std::move(expressions)));
+    return std::shared_ptr<FunctionDeclaration>(new FunctionDeclaration(label, paramsNames, std::move(expressions)));
 }
 
 void Parser::readFunctionHelper(std::vector<std::string> & paramsNames) {
@@ -189,7 +189,7 @@ void Parser::readFunctionHelper(std::vector<std::string> & paramsNames) {
     getNextToken();
 }
 
-std::unique_ptr<Expression> Parser::readForExpression() {
+std::shared_ptr<Expression> Parser::readForExpression() {
     getNextToken();
     requireToken(Token::Type::ROUND_BRACKET_LEFT);
     getNextToken();
@@ -204,9 +204,9 @@ std::unique_ptr<Expression> Parser::readForExpression() {
         readForHelper(paramNames, lists);
     }
     getNextToken();
-    std::unique_ptr<Expressions> expressions = getBracketExpressions();
+    std::shared_ptr<Expressions> expressions = getBracketExpressions();
     getNextToken();
-    return std::unique_ptr<ForExpression>(new ForExpression(paramNames, std::move(lists), std::move(expressions)));
+    return std::shared_ptr<ForExpression>(new ForExpression(paramNames, std::move(lists), std::move(expressions)));
 }
 
 void Parser::readForHelper(std::vector<std::string> & paramNames, std::vector<std::shared_ptr<Value> > & lists) {
@@ -221,7 +221,7 @@ void Parser::readForHelper(std::vector<std::string> & paramNames, std::vector<st
     getNextToken();
 }
 
-std::unique_ptr<Expression> Parser::readFunctionCall() {
+std::shared_ptr<Expression> Parser::readFunctionCall() {
     getNextToken();
     requireToken(Token::Type::IDENTIFIER);
     string label = getToken().getContent();
@@ -240,7 +240,7 @@ std::unique_ptr<Expression> Parser::readFunctionCall() {
     getNextToken();
     requireToken(Token::Type::SEMICOLON);
     getNextToken();
-    return std::unique_ptr<FunctionCall>(new FunctionCall(label, std::move(values)));
+    return std::shared_ptr<FunctionCall>(new FunctionCall(label, std::move(values)));
 }
 
 void Parser::readCallHelper(std::vector<std::shared_ptr<Value> > &  values) {
@@ -249,31 +249,31 @@ void Parser::readCallHelper(std::vector<std::shared_ptr<Value> > &  values) {
     getNextToken();
 }
 
-std::unique_ptr<Expression> Parser::readOrExpression(std::unique_ptr<Expression> expr) {
+std::shared_ptr<Expression> Parser::readOrExpression(std::shared_ptr<Expression> expr) {
     if(checkTokenType(Token::Type::OR_OPER)) {
         while(checkTokenType(Token::Type::OR_OPER)) {
             getNextToken();
-            std::unique_ptr<Expression> expr2 = readCompOrInsideIf();
+            std::shared_ptr<Expression> expr2 = readCompOrInsideIf();
             expr2 = readAndExpression(std::move(expr2));
-            expr = std::unique_ptr<OrExpression>(new OrExpression(std::move(expr), std::move(expr2)));
+            expr = std::shared_ptr<OrExpression>(new OrExpression(std::move(expr), std::move(expr2)));
         }
         return expr;
     } else if(checkTokenType(Token::Type::AND_OPER) || checkTokenType(Token::Type::ROUND_BRACKET_RIGHT)) {
-        return std::unique_ptr<OrExpression>(new OrExpression(std::move(expr), nullptr));
+        return std::shared_ptr<OrExpression>(new OrExpression(std::move(expr), nullptr));
     }
     throwUnexpextedToken(Token::Type::OR_OPER);
 }
 
-std::unique_ptr<Expression> Parser::readAndExpression(std::unique_ptr<Expression> expr) {
+std::shared_ptr<Expression> Parser::readAndExpression(std::shared_ptr<Expression> expr) {
     if(checkTokenType(Token::Type::AND_OPER)) {
         while(checkTokenType(Token::Type::AND_OPER)) {
             getNextToken();
-            std::unique_ptr<Expression> expr2  = readCompOrInsideIf();
-            expr = std::unique_ptr<AndExpression>(new AndExpression(std::move(expr), std::move(expr2)));
+            std::shared_ptr<Expression> expr2  = readCompOrInsideIf();
+            expr = std::shared_ptr<AndExpression>(new AndExpression(std::move(expr), std::move(expr2)));
         }
         return expr;
     } else if(checkTokenType(Token::Type::OR_OPER) || checkTokenType(Token::Type::ROUND_BRACKET_RIGHT)) {
-        return std::unique_ptr<AndExpression>(new AndExpression(std::move(expr), nullptr));
+        return std::shared_ptr<AndExpression>(new AndExpression(std::move(expr), nullptr));
     }
     throwUnexpextedToken(Token::Type::AND_OPER);
 }
@@ -347,26 +347,26 @@ Operator Parser::readCompOperator(Token token) {
     throwUnexpextedToken(Token::Type::EQUAL_OPER);
 }
 
-std::unique_ptr<Expression> Parser::readCompOrInsideIf() {
+std::shared_ptr<Expression> Parser::readCompOrInsideIf() {
     if(checkTokenType(Token::Type::ROUND_BRACKET_LEFT))
             return readIfExpression();
     else {
         std::shared_ptr<Value> val = readNonArray(getNextToken());
         const auto oper = readCompOperator(getNextToken());
         std::shared_ptr<Value> val2 = readNonArray(getNextToken());
-        return std::unique_ptr<CompExpression>(new CompExpression(std::move(val), oper, std::move(val2)));
+        return std::shared_ptr<CompExpression>(new CompExpression(std::move(val), oper, std::move(val2)));
     }
 }
 
-std::unique_ptr<Expression> Parser::readBuildExpression() {
+std::shared_ptr<Expression> Parser::readBuildExpression() {
     return readBuildOrStaticExpression(EndFunction::Build);
 }
 
-std::unique_ptr<Expression> Parser::readStaticExpression() {
+std::shared_ptr<Expression> Parser::readStaticExpression() {
     return readBuildOrStaticExpression(EndFunction::StaticLib);
 }
 
-std::unique_ptr<Expression> Parser::readBuildOrStaticExpression(EndFunction f) {
+std::shared_ptr<Expression> Parser::readBuildOrStaticExpression(EndFunction f) {
     getNextToken();
     requireToken(Token::Type::ROUND_BRACKET_LEFT);
     getNextToken();
@@ -386,7 +386,7 @@ std::unique_ptr<Expression> Parser::readBuildOrStaticExpression(EndFunction f) {
     getNextToken();
     requireToken(Token::Type::SEMICOLON);
     getNextToken();
-    return std::unique_ptr<BuildOrStaticExpression>
+    return std::shared_ptr<BuildOrStaticExpression>
             (new BuildOrStaticExpression(f, std::move(result), std::move(files), std::move(flags)));
 }
 

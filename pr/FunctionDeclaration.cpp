@@ -20,7 +20,7 @@ std::string FunctionDeclaration::toString() const {
 }
 
 bool FunctionDeclaration::evaluate() {
-    FunctionStack::decl.push_back(std::shared_ptr<FunctionDeclaration>(this));
+    FunctionStack::decl.push_back(shared_from_this());
 }
 
 bool FunctionDeclaration::execute(std::vector<std::shared_ptr<Value> > &values) {

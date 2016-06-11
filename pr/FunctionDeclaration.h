@@ -11,12 +11,12 @@
 #include "Value.h"
 
 namespace pr {
-    class FunctionDeclaration: public Expression {
+    class FunctionDeclaration: public Expression, public std::enable_shared_from_this<FunctionDeclaration> {
         std::string label;
         std::vector<std::string> params;
-        std::unique_ptr<Expressions> expressions;
+        std::shared_ptr<Expressions> expressions;
     public:
-        FunctionDeclaration(std::string label_, std::vector<std::string> params_, std::unique_ptr<Expressions> expr_)
+        FunctionDeclaration(std::string label_, std::vector<std::string> params_, std::shared_ptr<Expressions> expr_)
                 : label(label_), params(std::move(params_)), expressions(std::move(expr_)) {};
         ~FunctionDeclaration() {};
         std::string getLabel() {return label;};

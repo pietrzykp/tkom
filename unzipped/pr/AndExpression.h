@@ -11,10 +11,10 @@
 
 namespace pr {
     class AndExpression : public Expression {
-        std::unique_ptr<Expression> leftOperand;
-        std::unique_ptr<Expression> rightOperand;
+        std::shared_ptr<Expression> leftOperand;
+        std::shared_ptr<Expression> rightOperand;
     public:
-        AndExpression(std::unique_ptr<Expression> leftOperand_, std::unique_ptr<Expression> rightOperand_);
+        AndExpression(std::shared_ptr<Expression> leftOperand_, std::shared_ptr<Expression> rightOperand_);
         ~AndExpression() {};
 
         bool evaluate() const override;
