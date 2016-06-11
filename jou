@@ -1,0 +1,16 @@
+//register request	
+{ "action": "registerRequest", "size": "X", "devieceID":"_" , "cipheredData": { "user": "login", "password": "aaa", "publicKey": "key" } }
+
+//login request
+{ "action": "loginRequest", "size": "X", "deviceID":"_" , "cipheredData": { "user": "login", "password": "aaa", "publicKey": "key", "deviceId": "1" } }
+
+{ "action": "loginRequest", "size": "X", "devieceID":"_" , "cipheredData": { "user": "login", "password": "aaa", "publicKey": "key", "deviceId": "" } }
+
+//new messages
+{ "action": "newMessagesRequest", "size": "X", "deviceID":"1" , "cipheredData": { "notimportant" : "notimportant" } }
+
+//messageRead
+{ "action" : "messageRead", "size" : "X", "deviceID":"1" , "cipheredData": { "messageId" : "1" } }
+
+{"action" : "messageReceived", "deviceID" : "1"}
+

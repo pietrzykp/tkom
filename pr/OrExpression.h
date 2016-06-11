@@ -18,7 +18,7 @@ namespace pr {
         OrExpression(std::unique_ptr<Expression> leftOperand_, std::unique_ptr<Expression> rightOperand_);
         ~OrExpression() {};
 
-        bool evaluate() const override;
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };

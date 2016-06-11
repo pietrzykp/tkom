@@ -6,9 +6,23 @@
 #define TKOM2_FOREXPRESSION_H
 
 
-class ForExpression {
+#include "Expression.h"
+#include "Value.h"
+#include "Expressions.h"
 
+namespace pr {
+    class ForExpression: public Expression {
+        std::vector<std::string> paramNames;
+        std::vector<std::shared_ptr<Value> > lists;
+        std::unique_ptr<Expressions> expressions;
+    public:
+        ForExpression(std::vector<std::string> names_, std::vector<std::shared_ptr<Value> > lists_, std::unique_ptr<Expressions> expr_)
+                : paramNames(names_), lists(std::move(lists_)), expressions(std::move(expr_)) {};
+        ~ForExpression() {};
+
+        bool evaluate()  override;
+        std::string toString() const override;
+    };
 };
-
 
 #endif //TKOM2_FOREXPRESSION_H

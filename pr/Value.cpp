@@ -3,25 +3,16 @@
 //
 
 #include "Value.h"
+#include "VariableStack.h"
+
 using namespace pr;
-
-std::unordered_map<std::string, std::unique_ptr<Value> > variables = {};
-
-std::string Value::getValue() {
-    if(!singleValue)
-        return arrayValue[0]->getValue();
-    if(!searchValue)
-        return value;
-    else
-        return variables[value]->getValue();
-}
 
 std::string Value::toString() {
     if(singleValue) {
         if(!searchValue)
             return value;
         else
-            return variables[value]->toString();
+            return VariableStack::getValue(value)->toString();
     }
     std::string s = " [- ";
     for(int i = 0; i < arrayValue.size(); ++i)
@@ -29,4 +20,44 @@ std::string Value::toString() {
     s += " -] \n";
     return s;
 }
+
+std::shared_ptr<Value> Value::getByIndex(int index) {
+    if(singleValue)
+        return std::shared_ptr<Value>(this);
+    return arrayValue[index];
+}
+
+void Value::getAllValues(std::vector<std::string>& vec) {
+    if(singleValue)
+        vec.push_back(value);
+    else {
+        for(int i = 0; i < arrayValue.size(); ++i) {
+            arrayValue[i]->getAllValues(vec);
+        }
+    }
+}
+
+std::string Value::getSingleValue() {
+    if(!singleValue)
+        return arrayValue[0]->getSingleValue();
+    if(!searchValue)
+        return value;
+    else
+        return VariableStack::getValue(value)->getSingleValue();
+}
+
+std::shared_ptr<Value> Value::getNonSearchValue() {
+    if(!searchValue)
+        return nullptr;
+    return
+        VariableStack::getValue(value)->getNonSearchValue();
+}
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,24 @@
+#komentarzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+var temp1 = 'hello';
+var temp2 = 'false';
+var moduleFlags = '-Wall';
+
+var headerLibFiles = ['header.o', 'aaaaaa.txt', 'factoraal.o']; #komentarz2
+build(temp1, ['main.o', 'header.a']);
+
+staticlib('header.a', headerLibFiles);
+
+def buildWithFlags(list1, list2) {
+    var jou = 'jou';
+	if(jou == 'aaa' || temp2 == 'false') {
+		for(o in ['h.o', 'f.o'], jou in ['aaa.tx', 'eee.txt']) {
+			build(o,jou,moduleFlags);
+		}
+	} else {
+		var jou = '0';
+		build(jou, jou);
+	}
+}
+
+call buildWithFlags(['h.o', 'f.o'], ['bbb', ['aaa.tx', 'eee.txt']]);

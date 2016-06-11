@@ -12,13 +12,13 @@
 namespace pr {
     class FunctionCall : public Expression {
         std::string label;
-        std::vector<std::unique_ptr<Value> > values;
+        std::vector<std::shared_ptr<Value> > values;
     public:
-        FunctionCall(std::string label_, std::vector<std::unique_ptr<Value> > values_)
+        FunctionCall(std::string label_, std::vector<std::shared_ptr<Value> > values_)
                 : label(label_), values(std::move(values_)) {};
         ~FunctionCall() {};
 
-        bool evaluate() const override {};
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };

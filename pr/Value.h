@@ -10,21 +10,32 @@
 #include <vector>
 
 namespace pr {
-    class Value {
-        std::vector<std::unique_ptr<Value> > arrayValue;
+    class Value : public std::enable_shared_from_this<Value> {
+        std::vector<std::shared_ptr<Value> > arrayValue;
         std::string value;
         bool searchValue;
         bool singleValue;
     public:
-        Value(std::vector<std::unique_ptr<Value> > val_)
+        Value(std::vector<std::shared_ptr<Value> > val_)
                 : arrayValue(std::move(val_)), searchValue(false), singleValue(false) {};
         Value(std::string val_, bool search_) :
             value(val_), searchValue(search_), singleValue(true) {};
-        std::string getValue();
         std::string toString();
+        int getSize() {
+            if(singleValue)
+                return 1;
+            return arrayValue.size();
+        }
+        std::string getSingleValue();
+        std::shared_ptr<Value> getNonSearchValue();
+
+        void getAllValues(std::vector<std::string> & vec);
+
+        std::shared_ptr<Value> getByIndex(int index);
+        bool isSingleValue() { return singleValue; };
+        ~Value() {};
     };
 }
 
-extern std::unordered_map<std::string, std::unique_ptr<pr::Value>> variables;
 
 #endif //TKOM2_VALUE_H

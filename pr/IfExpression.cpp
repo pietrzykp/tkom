@@ -3,6 +3,7 @@
 //
 
 #include "IfExpression.h"
+#include "VariableStack.h"
 
 std::string pr::IfExpression::toString() const {
     std::string s;
@@ -11,4 +12,17 @@ std::string pr::IfExpression::toString() const {
     s += " else " + (elseIf == nullptr ? "null" : elseIf->toString()) + "\n";
     return s;
 }
+
+bool pr::IfExpression::evaluate() {
+    VariableStack::raiseLevel();
+    bool result = ifClause->evaluate();
+    if(result)
+        ifExpressions->evaluate();
+    else if(elseIf != nullptr)
+        elseIf->evaluate();
+    VariableStack::lowerLevel();
+    return true;
+}
+
+
 

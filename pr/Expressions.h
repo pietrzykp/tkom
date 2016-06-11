@@ -17,7 +17,7 @@ namespace pr {
         Expressions(std::vector<std::unique_ptr<Expression> > vec) : expressions(std::move(vec)) {};
         ~Expressions() {};
 
-        bool evaluate() const override {};
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };

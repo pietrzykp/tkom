@@ -9,7 +9,7 @@ using namespace pr;
 OrExpression::OrExpression(std::unique_ptr<Expression> leftOperand_, std::unique_ptr<Expression> rightOperand_) :
         leftOperand(std::move(leftOperand_)), rightOperand(std::move(rightOperand_)) { }
 
-bool OrExpression::evaluate() const {
+bool OrExpression::evaluate()  {
     if(leftOperand == nullptr)
         return rightOperand->evaluate();
     if(rightOperand == nullptr)

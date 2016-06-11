@@ -6,12 +6,13 @@
 #define TKOM2_EXPRESSION_H
 #include <string>
 
+
 namespace pr {
     class Expression {
     public:
         virtual ~Expression() {};
 
-        virtual bool evaluate() const = 0;
+        virtual bool evaluate() = 0;
         virtual std::string toString() const = 0;
     };
 }

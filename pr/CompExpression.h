@@ -13,14 +13,14 @@
 
 namespace pr {
     class CompExpression : public Expression {
-        std::unique_ptr<Value> leftOperand;
+        std::shared_ptr<Value> leftOperand;
         Operator op;
-        std::unique_ptr<Value> rightOperand;
+        std::shared_ptr<Value> rightOperand;
     public:
-        CompExpression(std::unique_ptr<Value> leftOperand_, Operator op_, std::unique_ptr<Value> rightOperand_);
+        CompExpression(std::shared_ptr<Value> leftOperand_, Operator op_, std::shared_ptr<Value> rightOperand_);
         ~CompExpression() {};
 
-        bool evaluate() const override;
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };

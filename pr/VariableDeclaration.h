@@ -12,13 +12,13 @@
 namespace pr {
     class VariableDeclaration : public Expression {
         std::string label;
-        std::unique_ptr<Value> value;
+        std::shared_ptr<Value> value;
     public:
-        VariableDeclaration(std::string label_, std::unique_ptr<Value> value_)
+        VariableDeclaration(std::string label_, std::shared_ptr<Value> value_)
                 : label(label_), value(std::move(value_)) {};
         ~VariableDeclaration() {};
 
-        bool evaluate() const override {};
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };

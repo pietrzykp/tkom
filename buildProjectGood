@@ -1,0 +1,21 @@
+#komentarzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+var tempxzZXZXZXa = 'hegha';
+var temp2 = 'false';
+def moduleFlags = '-Wall';
+
+var headerLibFIles = ['header.o', 'aaaaaa.txt', 'factoraal.o']; #komentarz2
+build(hello, ['main.o', 'header.a']);
+
+staticlib('header.a', headerLibFiles);
+call buildWithFlags(['h.o', 'f.o'], [bbb, ['aaa.tx']]);
+
+def bwf(jou1, jou2) {
+	if(temp == 'aaa' && temp2 == false) {
+		for(o in jou1, a in jou2) {
+			build(o,i,moduleflags);
+		}
+	} else {
+		var jou = '0';
+	}
+}

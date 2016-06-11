@@ -3,6 +3,7 @@
 //
 
 #include "FunctionCall.h"
+#include "FunctionStack.h"
 
 std::string pr::FunctionCall::toString() const {
     std::string s;
@@ -14,4 +15,10 @@ std::string pr::FunctionCall::toString() const {
     s += "endcall\n";
     return s;
 }
+
+bool pr::FunctionCall::evaluate() {
+    return FunctionStack::executeFunction(label, values);
+}
+
+
 

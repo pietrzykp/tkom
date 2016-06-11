@@ -21,7 +21,7 @@ namespace pr {
 
         ~IfExpression() {};
 
-        bool evaluate() const override {};
+        bool evaluate()  override;
         std::string toString() const override;
     };
 };
