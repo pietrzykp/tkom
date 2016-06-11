@@ -4,6 +4,9 @@
 
 #include "BuildOrStaticExpression.h"
 
+std::unordered_map<std::string, int> pr::BuildOrStaticExpression::dependencies;
+std::vector<std::vector <int> > pr::BuildOrStaticExpression::graph {{0}};
+
 std::string pr::BuildOrStaticExpression::toString() const {
     std::string s;
     std::string b = (function == EndFunction::Build ? "build" : "staticlib");

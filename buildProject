@@ -12,7 +12,7 @@ staticlib('header.a', headerLibFiles);
 def buildWithFlags(list1, list2) {
     var jou = 'jou';
 	if(jou == 'aaa' || temp2 == 'false') {
-		for(o in ['h.o', 'f.o'], jou in ['aaa.tx', 'eee.txt']) {
+		for(o in list1, jou in list2) {
 			build(o,jou,moduleFlags);
 		}
 	} else {
