@@ -2,44 +2,49 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/pr/CompExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionDeclaration.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/VariableStack.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Operator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/IfExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Value.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/AndExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/AndExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/VariableDeclaration.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionStack.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/BuildOrStaticExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/CompExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Expression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Expression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/VariableDeclaration.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/VariableStack.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/BuildOrStaticExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionDeclaration.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/ForExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/ForExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Value.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/IfExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/OrExpression.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Expressions.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionCall.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Expressions.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionCall.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/OrExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/Operator.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/pr/FunctionStack.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Token.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/CompExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/IfExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionDeclaration.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableStack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Operator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Value.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/AndExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/AndExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableDeclaration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionStack.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/BuildOrStaticExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/CompExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Expression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionDeclaration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/IfExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableDeclaration.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Expression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableStack.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/ForExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/ForExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Value.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/BuildOrStaticExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/OrExpression.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Expressions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionCall.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Expressions.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionCall.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/OrExpression.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/Operator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionStack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Token.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GraphNode.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CppScanner.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CppScanner.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GraphNode.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Parser.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Token.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CppScanner.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CppScanner.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Parser.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Token.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/TokenTest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/Tests.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/CppScannerTest.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

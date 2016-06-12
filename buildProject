@@ -5,9 +5,11 @@ var temp2 = 'false';
 var moduleFlags = '-Wall';
 
 var headerLibFiles = ['header.o', 'aaaaaa.txt', 'factoraal.o']; #komentarz2
-build(temp1, ['main.o', 'header.a']);
+build('aaa', ['bbb', 'ccc']);
+build('bbb', ['ddd', 'eee']);
+build('ddd', ['fff', 'uuu']);
 
-staticlib('header.a', headerLibFiles);
+staticlib('header.a', headerLibFiles, moduleFlags);
 
 def buildWithFlags(list1, list2) {
     var jou = 'jou';
@@ -21,4 +23,4 @@ def buildWithFlags(list1, list2) {
 	}
 }
 
-call buildWithFlags(['h.o', 'f.o'], ['bbb', ['aaa.tx', 'eee.txt']]);
+call buildWithFlags2(['h.o', 'f.o'], ['bbb', ['aaa.tx', 'eee.txt']]);
