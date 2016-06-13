@@ -23,6 +23,9 @@ struct GraphNode {
 };
 
 class Resolver {
+    static bool checkCycles(int index, std::string & s);
+    static std::string buildExecutionString();
+    static bool getRightOrder(int index, std::string & s);
 public:
     static std::unordered_map<std::string, int> dependencies;
     static std::vector<std::shared_ptr<GraphNode> > nodes;

@@ -3,7 +3,7 @@ var names = ['pmaketemp/and', 'pmaketemp/build', 'pmaketemp/comp', 'pmaketemp/ex
 
 
 staticlib('pmaketemp/libpmake.a', names);
-build('chuj', 'src/main.cpp', ['-std=c++11', '-Lpmaketemp -lpmake']);
+build('out', 'src/main.cpp', ['-std=c++11', '-Lpmaketemp -lpmake']);
 
 var osfiles = ['src/pr/AndExpression.cpp', 'src/pr/BuildOrStaticExpression.cpp',
 'src/pr/CompExpression.cpp', 'src/pr/Expression.cpp', 'src/pr/Expressions.cpp',

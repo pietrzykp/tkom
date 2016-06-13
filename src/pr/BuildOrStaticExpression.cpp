@@ -11,10 +11,10 @@ bool pr::BuildOrStaticExpression::evaluate() {
     std::vector<std::string> fil;
     if(files != nullptr)
         files->getAllValues(fil);
-    auto got = dependencies.find(res);
+    auto got = Resolver::dependencies.find(res);
 
     std::shared_ptr<GraphNode> resultNode;
-    if(got == dependencies.end()) {
+    if(got == Resolver::dependencies.end()) {
         resultNode = std::shared_ptr<GraphNode>(new GraphNode);
         if(function == EndFunction::Build)
             resultNode->isBuild = true;
@@ -26,7 +26,7 @@ bool pr::BuildOrStaticExpression::evaluate() {
             flags->getAllValues(resultNode->flags);
         resultNode->files = fil;
         resultNode->alreadyDefined = true;
-        dependencies[res] = Resolver::nodes.size();
+        Resolver::dependencies[res] = Resolver::nodes.size();
         Resolver::nodes.push_back(resultNode);
     }
     else {
@@ -46,12 +46,12 @@ bool pr::BuildOrStaticExpression::evaluate() {
     for(int i = 0; i < fil.size() ; ++i) {
 
         std::shared_ptr<GraphNode> depNode;
-        auto dot = dependencies.find(fil[i]);
-        if(dot == dependencies.end()) {
+        auto dot = Resolver::dependencies.find(fil[i]);
+        if(dot == Resolver::dependencies.end()) {
             depNode = std::shared_ptr<GraphNode>(new GraphNode);
             depNode->index = Resolver::nodes.size();
             depNode->name = fil[i];
-            dependencies[fil[i]] = Resolver::nodes.size();
+            Resolver::dependencies[fil[i]] = Resolver::nodes.size();
             Resolver::nodes.push_back(depNode);
         } else
             depNode = Resolver::nodes[dot->second];

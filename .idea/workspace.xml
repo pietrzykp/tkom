@@ -16,57 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c6718d3-959a-4768-a50f-846a8b8e93c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chuj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/and" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/build" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/call" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/comp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/expr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/exprs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/fdecl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/for" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/fstack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/if" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/libpmake.a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/oper" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/or" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/val" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/valdecl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/vstack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chuj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libpmake.a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmakeoutout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/and" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/build" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/call" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/comp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/expr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/exprs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/fdecl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/for" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/fstack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/if" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/libpmake.a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/oper" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/or" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/parser" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/scanner" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/token" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/val" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/valdecl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/vstack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/token.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buildThisProject" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildProject" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/buildProject" afterPath="$PROJECT_DIR$/buildProjectGood" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/parser" afterPath="$PROJECT_DIR$/pmaketemp/parser" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/scanner" afterPath="$PROJECT_DIR$/pmaketemp/scanner" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/token" afterPath="$PROJECT_DIR$/pmaketemp/token" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dupa" afterPath="$PROJECT_DIR$/src/dupa" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a.out" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildProject" afterPath="$PROJECT_DIR$/buildProject" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildThisProject" afterPath="$PROJECT_DIR$/buildThisProject" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphNode.cpp" afterPath="$PROJECT_DIR$/src/GraphNode.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphNode.h" afterPath="$PROJECT_DIR$/src/GraphNode.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
@@ -92,14 +44,26 @@
     <favorites_list name="tkom2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.34776536">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="756">
-                  <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+                <state relative-caret-position="450">
+                  <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="buildThisProject" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/buildThisProject">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -118,11 +82,9 @@
           <file leaf-file-name="Tests.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#109#153#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="169">
+                  <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -130,18 +92,18 @@
           <file leaf-file-name="GraphNode.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1908">
-                  <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+                <state relative-caret-position="918">
+                  <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GraphNode.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="GraphNode.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/GraphNode.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+                <state relative-caret-position="385">
+                  <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
                   <folding>
                     <element signature="e#96#113#0" expanded="true" />
                   </folding>
@@ -198,18 +160,38 @@
           <file leaf-file-name="buildProjectGood" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/buildProjectGood">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="25" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="69" />
+                <state relative-caret-position="324">
+                  <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="buildProject" pinned="false" current-in-tab="false">
+          <file leaf-file-name="buildProject1" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildProject1">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="buildProjectBad" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildProjectBad">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="buildProject" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/buildProject">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state relative-caret-position="450">
+                  <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -218,8 +200,8 @@
           <file leaf-file-name="BuildOrStaticExpression.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state relative-caret-position="390">
+                  <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
                   <folding>
                     <element signature="e#42#78#0" expanded="true" />
                   </folding>
@@ -267,34 +249,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BuildOrStaticExpression.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BuildOrStaticExpression.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="565">
-                  <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+                <state relative-caret-position="277">
+                  <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
                   <folding>
                     <element signature="e#108#127#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Expressions.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/Expressions.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Expression.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/Expression.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -309,7 +271,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/unzipped/pr/FunctionCall.h" />
         <option value="$PROJECT_DIR$/unzipped/pr/Value.cpp" />
         <option value="$PROJECT_DIR$/unzipped/pr/VariableDeclaration.h" />
         <option value="$PROJECT_DIR$/pr/Value.h" />
@@ -353,13 +314,14 @@
         <option value="$PROJECT_DIR$/src/pr/FunctionStack.h" />
         <option value="$PROJECT_DIR$/buildProjectGood" />
         <option value="$PROJECT_DIR$/src/buildProject" />
-        <option value="$PROJECT_DIR$/buildProject" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/test/Tests.cpp" />
-        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
-        <option value="$PROJECT_DIR$/src/GraphNode.cpp" />
-        <option value="$PROJECT_DIR$/src/GraphNode.h" />
         <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" />
+        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
+        <option value="$PROJECT_DIR$/src/GraphNode.h" />
+        <option value="$PROJECT_DIR$/src/GraphNode.cpp" />
+        <option value="$PROJECT_DIR$/test/Tests.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/buildThisProject" />
+        <option value="$PROJECT_DIR$/buildProject" />
       </list>
     </option>
   </component>
@@ -737,12 +699,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test/Tests.cpp</url>
-          <line>112</line>
+          <line>118</line>
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/test/Tests.cpp</url>
-          <line>121</line>
+          <line>127</line>
           <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
@@ -756,8 +718,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src.cpp" />
-    <entry file="file://$PROJECT_DIR$/src.h" />
     <entry file="file:///usr/include/boost/test/impl/unit_test_main.ipp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1023,14 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildThisProject">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -1043,14 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buildProjectGood">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1081,11 +1025,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildProject">
+    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="277">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#108#127#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,59 +1043,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-          <folding>
-            <element signature="e#109#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphNode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="385">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding>
             <element signature="e#96#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="115" column="52" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding>
             <element signature="e#42#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
+    <entry file="file://$PROJECT_DIR$/buildProject1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildProjectBad">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildProjectGood">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
-            <element signature="e#108#127#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildProject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildThisProject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

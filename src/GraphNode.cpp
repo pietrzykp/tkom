@@ -9,7 +9,7 @@ std::vector<std::shared_ptr<GraphNode> > Resolver::nodes;
 
 
 
-std::string pr::BuildOrStaticExpression::preparedfs() {
+std::string Resolver::resolve() {
     for (const auto &pair : dependencies) {
         std::cout << pair.first << " " << pair.second << std::endl;
     }
@@ -26,24 +26,21 @@ std::string pr::BuildOrStaticExpression::preparedfs() {
     std::cout<<"Graph size : "<< visited.size() << std::endl;
     std::string s;
     for(int i = 0; i < dependencies.size(); ++i) {
-        if(!dfs(i, s)) {
+        if(!checkCycles(i, s)) {
             s += nodes[i]->name  + ".";
             throw std::runtime_error("Cycle detected: " + s);
         }
     }
 
-    return buildPoprerly();
+    return buildExecutionString();
 }
 
-// 0 - not explored
-//1 = being explored
-// 2 - fully explored
-bool pr::BuildOrStaticExpression::dfs(int index, std::string & s) {
+bool Resolver::checkCycles(int index, std::string &s) {
     nodes[index] -> visited = 1;
     for(int i = 0; i < nodes[index]->graph.size(); ++i) {
         int ind2 = nodes[index]->graph[i];
         if(nodes[ind2]->visited == 0) {
-            if (!dfs(ind2, s)) {
+            if (!checkCycles(ind2, s)) {
                 s += nodes[ind2]->name + "->";
                 return false;
             }
@@ -57,23 +54,23 @@ bool pr::BuildOrStaticExpression::dfs(int index, std::string & s) {
     return true;
 }
 
-std::string pr::BuildOrStaticExpression::buildPoprerly() {
+std::string Resolver::buildExecutionString() {
     std::string s;
     for(int i = 0; i < dependencies.size(); ++i) {
         if(!nodes[i] -> visited != 4)
-            dfs2(i, s);
+            getRightOrder(i, s);
     }
     return s;
 }
 
-bool pr::BuildOrStaticExpression::dfs2(int index, std::string & s) {
+bool Resolver::getRightOrder(int index, std::string &s) {
     if(nodes[index]->visited == 4)
         return true;
     nodes[index]->visited = 4;
     for(int i = 0; i < nodes[index]->graph.size(); ++i) {
         int ind2 = nodes[index]->graph[i];
         if(nodes[ind2]->alreadyDefined == true)
-            dfs2(ind2, s);
+            getRightOrder(ind2, s);
     }
     if(nodes[index]->alreadyDefined == false)
         return true;
@@ -96,12 +93,4 @@ bool pr::BuildOrStaticExpression::dfs2(int index, std::string & s) {
             break;
     }
     s += "\n";
-    /*std::cout<<(nodes[index]->isBuild ? "g++ " : "ar rcs ");
-    for(int i = 0; i < nodes[index]->files.size(); ++i)
-        std::cout<<nodes[index]->files[i]<<" ";
-    std::cout<<"-o pmaketemp/"<<nodes[index]->name<<" ";
-
-    for(int i = 0; i < nodes[index]->flags.size(); ++i)
-        std::cout<<nodes[index]->flags[i]<<" ";
-    std::cout<<std::endl;*/
 }
