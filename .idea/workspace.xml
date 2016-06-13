@@ -16,138 +16,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c6718d3-959a-4768-a50f-846a8b8e93c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphNode.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GraphNode.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/CppScannerTest.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Tests.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/TokenTest.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pr/BuildOrStaticExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeCache.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CMakeSystem.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CompilerIdC/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/CMakeOutput.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/Makefile.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/Makefile2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/TargetDirectories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/cmake.check_cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/progress.marks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/CXX.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/CppScanner.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/Parser.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/Token.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/main.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/AndExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/BuildOrStaticExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/CompExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/Expression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/Expressions.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/ForExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/FunctionCall.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/FunctionDeclaration.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/IfExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/Operator.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/OrExpression.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/Value.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/pr/VariableDeclaration.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeFiles/tkom2.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CppScanner.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/CppScanner.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/Parser.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/Parser.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/Token.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/Token.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/buildProject" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/buildProjectBad" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/buildProjectGood" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/cmake_install.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/AndExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/AndExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/BuildOrStaticExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/BuildOrStaticExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/CompExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/CompExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Expression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Expression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Expressions.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Expressions.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/ForExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/ForExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/FunctionCall.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/FunctionCall.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/FunctionDeclaration.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/FunctionDeclaration.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/IfExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/IfExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Operator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Operator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/OrExpression.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/OrExpression.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Value.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/Value.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/VariableDeclaration.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/pr/VariableDeclaration.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/tkom-parser-pietrzyk.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unzipped/tkom2" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CppScanner.cpp" afterPath="$PROJECT_DIR$/src/CppScanner.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CppScanner.h" afterPath="$PROJECT_DIR$/src/CppScanner.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Parser.cpp" afterPath="$PROJECT_DIR$/src/Parser.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Parser.h" afterPath="$PROJECT_DIR$/src/Parser.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Token.cpp" afterPath="$PROJECT_DIR$/src/Token.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Token.h" afterPath="$PROJECT_DIR$/src/Token.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/AndExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/AndExpression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/AndExpression.h" afterPath="$PROJECT_DIR$/src/pr/AndExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/BuildOrStaticExpression.h" afterPath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/CompExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/CompExpression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/CompExpression.h" afterPath="$PROJECT_DIR$/src/pr/CompExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Expression.cpp" afterPath="$PROJECT_DIR$/src/pr/Expression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Expression.h" afterPath="$PROJECT_DIR$/src/pr/Expression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Expressions.cpp" afterPath="$PROJECT_DIR$/src/pr/Expressions.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Expressions.h" afterPath="$PROJECT_DIR$/src/pr/Expressions.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/ForExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/ForExpression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/ForExpression.h" afterPath="$PROJECT_DIR$/src/pr/ForExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionCall.cpp" afterPath="$PROJECT_DIR$/src/pr/FunctionCall.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionCall.h" afterPath="$PROJECT_DIR$/src/pr/FunctionCall.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionDeclaration.cpp" afterPath="$PROJECT_DIR$/src/pr/FunctionDeclaration.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionDeclaration.h" afterPath="$PROJECT_DIR$/src/pr/FunctionDeclaration.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionStack.cpp" afterPath="$PROJECT_DIR$/src/pr/FunctionStack.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/FunctionStack.h" afterPath="$PROJECT_DIR$/src/pr/FunctionStack.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/IfExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/IfExpression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/IfExpression.h" afterPath="$PROJECT_DIR$/src/pr/IfExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Operator.cpp" afterPath="$PROJECT_DIR$/src/pr/Operator.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Operator.h" afterPath="$PROJECT_DIR$/src/pr/Operator.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/OrExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/OrExpression.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/OrExpression.h" afterPath="$PROJECT_DIR$/src/pr/OrExpression.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Value.cpp" afterPath="$PROJECT_DIR$/src/pr/Value.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/Value.h" afterPath="$PROJECT_DIR$/src/pr/Value.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/VariableDeclaration.cpp" afterPath="$PROJECT_DIR$/src/pr/VariableDeclaration.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/VariableDeclaration.h" afterPath="$PROJECT_DIR$/src/pr/VariableDeclaration.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/VariableStack.cpp" afterPath="$PROJECT_DIR$/src/pr/VariableStack.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pr/VariableStack.h" afterPath="$PROJECT_DIR$/src/pr/VariableStack.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tkom2.iml" afterPath="$PROJECT_DIR$/.idea/tkom2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chuj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/and" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/call" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/comp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/expr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/exprs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/fdecl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/for" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/fstack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/if" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/libpmake.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/node" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/oper" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/or" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/val" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/valdecl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pmaketemp/vstack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chuj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/libpmake.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmakeoutout" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/and" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/call" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/comp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/expr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/exprs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/fdecl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/for" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/fstack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/if" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/libpmake.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/node" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/oper" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/or" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/parser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/scanner" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/token" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/val" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/valdecl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pmaketemp/vstack" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/token.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buildThisProject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildProject" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/buildProject" afterPath="$PROJECT_DIR$/buildProjectGood" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/parser" afterPath="$PROJECT_DIR$/pmaketemp/parser" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/scanner" afterPath="$PROJECT_DIR$/pmaketemp/scanner" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/jou/token" afterPath="$PROJECT_DIR$/pmaketemp/token" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dupa" afterPath="$PROJECT_DIR$/src/dupa" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildProject" afterPath="$PROJECT_DIR$/buildProject" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphNode.cpp" afterPath="$PROJECT_DIR$/src/GraphNode.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphNode.h" afterPath="$PROJECT_DIR$/src/GraphNode.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" afterPath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" afterPath="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Tests.cpp" afterPath="$PROJECT_DIR$/test/Tests.cpp" />
     </list>
     <ignored path="tkom2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,18 +95,62 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+                <state relative-caret-position="756">
+                  <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Operator.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/Operator.cpp">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Tests.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="138">
+                  <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#109#153#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GraphNode.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1908">
+                  <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GraphNode.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/GraphNode.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#96#113#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VariableStack.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -190,63 +159,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IfExpression.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/IfExpression.h">
+          <file leaf-file-name="VariableStack.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <state relative-caret-position="498">
+                  <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="80" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IfExpression.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/IfExpression.cpp">
+          <file leaf-file-name="buildProject" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/buildProject">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FunctionStack.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/FunctionStack.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FunctionStack.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/FunctionStack.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#103#120#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FunctionDeclaration.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/FunctionDeclaration.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FunctionDeclaration.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/FunctionDeclaration.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="324">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -255,8 +182,8 @@
           <file leaf-file-name="FunctionCall.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/FunctionCall.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+                <state relative-caret-position="144">
+                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding>
                     <element signature="e#42#67#0" expanded="true" />
                   </folding>
@@ -264,48 +191,38 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FunctionCall.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/FunctionCall.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="buildProjectGood" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/buildProjectGood">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="25" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="69" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="buildProject" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/buildProject">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+                <state relative-caret-position="162">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ForExpression.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/ForExpression.cpp">
+          <file leaf-file-name="BuildOrStaticExpression.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+                <state relative-caret-position="324">
+                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                   <folding>
-                    <element signature="e#42#68#0" expanded="true" />
+                    <element signature="e#42#78#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ForExpression.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/ForExpression.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -313,8 +230,18 @@
           <file leaf-file-name="Expressions.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/Expressions.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="144">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AndExpression.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pr/AndExpression.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="379">
+                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -343,9 +270,11 @@
           <file leaf-file-name="BuildOrStaticExpression.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-                  <folding />
+                <state relative-caret-position="565">
+                  <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#108#127#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -353,7 +282,7 @@
           <file leaf-file-name="Expressions.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/Expressions.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
+                <state relative-caret-position="252">
                   <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
                   <folding />
                 </state>
@@ -362,16 +291,6 @@
           </file>
           <file leaf-file-name="Expression.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pr/Expression.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Expression.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pr/Expression.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -390,9 +309,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/unzipped/pr/BuildOrStaticExpression.h" />
-        <option value="$PROJECT_DIR$/unzipped/pr/CompExpression.cpp" />
-        <option value="$PROJECT_DIR$/unzipped/pr/CompExpression.h" />
         <option value="$PROJECT_DIR$/unzipped/pr/FunctionCall.h" />
         <option value="$PROJECT_DIR$/unzipped/pr/Value.cpp" />
         <option value="$PROJECT_DIR$/unzipped/pr/VariableDeclaration.h" />
@@ -433,14 +349,17 @@
         <option value="$PROJECT_DIR$/test/CppScannerTest.cpp" />
         <option value="$PROJECT_DIR$/src/pr/Value.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/GraphNode.h" />
-        <option value="$PROJECT_DIR$/test/Tests.cpp" />
-        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" />
-        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
         <option value="$PROJECT_DIR$/src/pr/VariableStack.h" />
         <option value="$PROJECT_DIR$/src/pr/FunctionStack.h" />
+        <option value="$PROJECT_DIR$/buildProjectGood" />
+        <option value="$PROJECT_DIR$/src/buildProject" />
         <option value="$PROJECT_DIR$/buildProject" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/test/Tests.cpp" />
+        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp" />
+        <option value="$PROJECT_DIR$/src/GraphNode.cpp" />
+        <option value="$PROJECT_DIR$/src/GraphNode.h" />
+        <option value="$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h" />
       </list>
     </option>
   </component>
@@ -451,9 +370,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -774,17 +693,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2183406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2183406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30208334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33229166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34270832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -794,6 +712,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -817,27 +736,17 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/pr/Expressions.cpp</url>
-          <line>9</line>
-          <option name="timeStamp" value="48" />
+          <url>file://$PROJECT_DIR$/test/Tests.cpp</url>
+          <line>112</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/pr/FunctionCall.cpp</url>
-          <line>8</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/pr/AndExpression.cpp</url>
-          <line>22</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp</url>
-          <line>96</line>
-          <option name="timeStamp" value="110" />
+          <url>file://$PROJECT_DIR$/test/Tests.cpp</url>
+          <line>121</line>
+          <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="111" />
+      <option name="time" value="117" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -847,21 +756,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/4.8/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TokenTest.h" />
-    <entry file="file:///usr/include/boost/test/unit_test_log.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src.cpp" />
     <entry file="file://$PROJECT_DIR$/src.h" />
     <entry file="file:///usr/include/boost/test/impl/unit_test_main.ipp">
@@ -878,18 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TokenTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,26 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Token.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CppScanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Token.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -940,52 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="83" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/4.8/bits/shared_ptr_base.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="915" column="0" selection-start-line="915" selection-start-column="0" selection-end-line="915" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#96#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/AndExpression.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="148" column="20" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -998,35 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildProject">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/VariableDeclaration.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +918,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/FunctionDeclaration.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="360">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
@@ -1130,19 +926,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/FunctionDeclaration.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="396">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/FunctionCall.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#42#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1150,13 +936,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/ForExpression.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="576">
           <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
             <element signature="e#42#68#0" expanded="true" />
@@ -1174,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/Expressions.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="252">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
@@ -1184,14 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/Expressions.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1212,27 +989,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr/FunctionCall.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="432">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Token.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Token.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="e#85#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/buildProject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildThisProject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/VariableStack.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildProjectGood">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/Expressions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/AndExpression.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/FunctionCall.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildProject">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Tests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+          <folding>
+            <element signature="e#109#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="756">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphNode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1908">
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#96#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr/BuildOrStaticExpression.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="e#108#127#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,18 @@
+var names = ['pmaketemp/and', 'pmaketemp/build', 'pmaketemp/comp', 'pmaketemp/expr', 'pmaketemp/exprs', 'pmaketemp/for', 'pmaketemp/call', 'pmaketemp/fdecl',
+'pmaketemp/fstack', 'pmaketemp/if', 'pmaketemp/oper', 'pmaketemp/or', 'pmaketemp/val', 'pmaketemp/valdecl', 'pmaketemp/vstack', 'pmaketemp/scanner', 'pmaketemp/parser', 'pmaketemp/token', 'pmaketemp/node'];
+
+
+staticlib('pmaketemp/libpmake.a', names);
+build('pmakeoutout', 'main.cpp', ['-std=c++11', '-Lpmaketemp -lpmake']);
+
+var osfiles = ['pr/AndExpression.cpp', 'pr/BuildOrStaticExpression.cpp',
+'pr/CompExpression.cpp', 'pr/Expression.cpp', 'pr/Expressions.cpp',
+'pr/ForExpression.cpp', 'pr/FunctionCall.cpp', 'pr/FunctionDeclaration.cpp',
+'pr/FunctionStack.cpp', 'pr/IfExpression.cpp', 'pr/Operator.cpp',
+'pr/OrExpression.cpp', 'pr/Value.cpp', 'pr/VariableDeclaration.cpp',
+'pr/VariableStack.cpp', 'CppScanner.cpp', 'Parser.cpp', 'Token.cpp', 'GraphNode.cpp'];
+
+
+for(n in names, f in osfiles) {
+    build(n, f, '-std=c++11 -c');
+}

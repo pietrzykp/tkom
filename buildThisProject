@@ -1,0 +1,18 @@
+var names = ['pmaketemp/and', 'pmaketemp/build', 'pmaketemp/comp', 'pmaketemp/expr', 'pmaketemp/exprs', 'pmaketemp/for', 'pmaketemp/call', 'pmaketemp/fdecl',
+'pmaketemp/fstack', 'pmaketemp/if', 'pmaketemp/oper', 'pmaketemp/or', 'pmaketemp/val', 'pmaketemp/valdecl', 'pmaketemp/vstack', 'pmaketemp/scanner', 'pmaketemp/parser', 'pmaketemp/token', 'pmaketemp/node'];
+
+
+staticlib('pmaketemp/libpmake.a', names);
+build('chuj', 'src/main.cpp', ['-std=c++11', '-Lpmaketemp -lpmake']);
+
+var osfiles = ['src/pr/AndExpression.cpp', 'src/pr/BuildOrStaticExpression.cpp',
+'src/pr/CompExpression.cpp', 'src/pr/Expression.cpp', 'src/pr/Expressions.cpp',
+'src/pr/ForExpression.cpp', 'src/pr/FunctionCall.cpp', 'src/pr/FunctionDeclaration.cpp',
+'src/pr/FunctionStack.cpp', 'src/pr/IfExpression.cpp', 'src/pr/Operator.cpp',
+'src/pr/OrExpression.cpp', 'src/pr/Value.cpp', 'src/pr/VariableDeclaration.cpp',
+'src/pr/VariableStack.cpp', 'src/CppScanner.cpp', 'src/Parser.cpp', 'src/Token.cpp', 'src/GraphNode.cpp'];
+
+
+for(n in names, f in osfiles) {
+    build(n, f, '-std=c++11 -c');
+}

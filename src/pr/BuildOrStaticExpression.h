@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include <string>
 #include "Expression.h"
 #include "Value.h"
 
@@ -31,10 +32,10 @@ namespace pr {
 
         bool evaluate()  override;
         std::string toString() const override;
-        static bool dfs(int i);
-        static bool dfs2(int i);
-        static void buildPoprerly();
-        static void preparedfs();
+        static bool dfs(int i, gi);
+        static bool dfs2(int i, std::string& s);
+        static std::string buildPoprerly();
+        static std::string preparedfs();
     };
 
 };

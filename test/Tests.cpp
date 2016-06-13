@@ -1,4 +1,3 @@
-/*
 //
 // Created by paulina on 12.06.16.
 //
@@ -83,4 +82,43 @@ BOOST_AUTO_TEST_CASE(def_if_build_call) {
             " endexpr\n"
             "");
 }
-*/
+
+BOOST_AUTO_TEST_CASE(check_if_cycle_detected) {
+    std::istringstream i("build('aaa', ['bbb', 'ccc']);\n"
+                               "build('bbb', ['ddd', 'eee']);\n"
+                               "build('ddd', ['aaa', 'uuu']);");
+    Parser p(std::shared_ptr<CppScanner>(new CppScanner(i)));
+    try {
+        std::shared_ptr<Expression> e = p.parse();
+        e->evaluate();
+        pr::BuildOrStaticExpression::preparedfs();
+    } catch(std::runtime_error err) {
+        BOOST_CHECK_EQUAL(err.what(), "Cycle detected: aaa->ddd->bbb->aaa.");
+        return;
+    }
+    BOOST_CHECK_EQUAL(1,2);
+}
+
+BOOST_AUTO_TEST_CASE(whole_build_example) {
+    std::istringstream i("\nvar moduleFlags = '-Wall';\n"
+                                 "\n"
+                                 "var headerLibFiles = ['header.o', 'aaaaaa.txt', 'factoraal.o']; #komentarz2\n"
+                                 "build('aaa', ['bbb', 'ccc']);\n"
+                                 "build('bbb', ['ddd', 'eee']);\n"
+                                 "build('ddd', ['ggg', 'uuu']);\n"
+                                 "\n"
+                                 "staticlib('header.a', headerLibFiles, moduleFlags);");
+    Parser p(std::shared_ptr<CppScanner>(new CppScanner(i)));
+    try {
+        std::shared_ptr<Expression> e = p.parse();
+        e->evaluate();
+        std::string result = pr::BuildOrStaticExpression::preparedfs();
+        int x= 1;
+        BOOST_CHECK_EQUAL(result, "g++ ggg uuu -o ddd \n"
+                "g++ ddd eee -o bbb \n"
+                "g++ bbb ccc -o aaa \n"
+                "ar rcs header.a header.o aaaaaa.txt factoraal.o -Wall \n");
+    } catch(std::runtime_error err) {
+        BOOST_CHECK_EQUAL(1, 2);
+    }
+}

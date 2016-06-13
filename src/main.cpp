@@ -2,16 +2,17 @@
 #include <stdexcept>
 #include <fstream>
 #include <sstream>
+#include <iostream>
 #include "CppScanner.h"
 #include "Parser.h"
+#include "Token.h"
 #include <memory>
-*/
 
 using namespace std;
 
 
 int main() {
-    /*std::ifstream fs;
+    std::ifstream fs;
     fs.open("buildProject");
 
     //std::istringstream i("if('a' == 'b') { var temp = 'aaa'; } else if('c' == 'd') { var temp = 'jjj'; var jou = 'aaa';}");
@@ -52,17 +53,26 @@ std::istringstream ii("#komentarz \n"
                                  "}\n"
                                  "}\n";
 
+    std::istringstream iq("\nvar moduleFlags = '-Wall';\n"
+                                 "\n"
+                                 "var headerLibFiles = ['header.o', 'aaaaaa.txt', 'factoraal.o']; #komentarz2\n"
+                                 "build('aaa', ['bbb', 'ccc']);\n"
+                                 "build('bbb', ['ddd', 'eee']);\n"
+                                 "build('ddd', ['ggg', 'uuu']);\n"
+                                 "\n"
+                                 "staticlib('header.a', headerLibFiles, moduleFlags);");
 
-
-    Parser p(std::shared_ptr<CppScanner>(new CppScanner(fs)));
+    Parser p(std::shared_ptr<CppScanner>(new CppScanner(iq)));
     try {
         std::shared_ptr<Expression> e = p.parse();
         cout<<e->evaluate()<<endl;
-    } catch(std::runtime_error err) {
-        cout<<err.what();
-    }
-    cout<<"dupa";
-    pr::BuildOrStaticExpression::preparedfs();*/
+        std::string dupa = pr::BuildOrStaticExpression::preparedfs();
+        cout<<dupa;
+      //  system(dupa.c_str());
 
+    } catch(std::runtime_error err) {
+        cout<<"ERROR: " << err.what();
+    }
     return 0;
 }
+*/
