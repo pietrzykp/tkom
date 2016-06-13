@@ -4,24 +4,25 @@
 #include <iostream>
 #include "CppScanner.h"
 #include "Parser.h"
-#include "Token.h"
 #include "GraphNode.h"
-#include <memory>
+#include <cstring>
 
 using namespace std;
 
 
-int main() {
+int main(int argc, char *argv[]) {
     std::ifstream fs;
     fs.open("buildProject");
-
+    bool execute = !(argc == 2 && !strcmp(argv[1], "-noexecute"));
     Parser p(std::shared_ptr<CppScanner>(new CppScanner(fs)));
     try {
         std::shared_ptr<Expression> e = p.parse();
-        cout<<e->evaluate()<<endl;
+        e->evaluate();
         std::string result = Resolver::resolve();
-        system(result.c_str());
-
+        if(execute)
+            system(result.c_str());
+        else
+            cout<<result<<endl;
     } catch(std::runtime_error err) {
         cout<<"ERROR: " << err.what();
     }

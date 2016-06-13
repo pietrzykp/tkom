@@ -23,7 +23,7 @@ private:
     bool tryAlnum();
 
     bool tryStringToken();
-    bool tryParameterOrAnd();
+    bool tryAnd();
     bool tryOperator();
     void getNextChar();
 

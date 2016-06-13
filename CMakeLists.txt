@@ -18,12 +18,13 @@ endif()
 set(CXX_STANDARD 1y)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
 
-set(SOURCE_FILES src/main.cpp src/CppScanner.cpp src/CppScanner.h src/Token.cpp src/Token.h src/Parser.cpp src/Parser.h src/pr/Expression.cpp src/pr/Expression.h src/pr/OrExpression.cpp src/pr/OrExpression.h src/pr/AndExpression.cpp src/pr/AndExpression.h src/pr/CompExpression.cpp src/pr/CompExpression.h src/pr/Operator.cpp src/pr/Operator.h src/pr/Value.cpp src/pr/Value.h src/pr/VariableDeclaration.cpp src/pr/VariableDeclaration.h src/pr/Expressions.cpp src/pr/Expressions.h src/pr/IfExpression.cpp src/pr/IfExpression.h src/pr/FunctionCall.cpp src/pr/FunctionCall.h src/pr/FunctionDeclaration.cpp src/pr/FunctionDeclaration.h src/pr/ForExpression.cpp src/pr/ForExpression.h src/pr/BuildOrStaticExpression.cpp src/pr/BuildOrStaticExpression.h src/pr/VariableStack.cpp src/pr/VariableStack.h src/pr/FunctionStack.cpp src/pr/FunctionStack.h test/TokenTest.cpp test/CppScannerTest.cpp test/Tests.cpp src/GraphNode.cpp src/GraphNode.h)
-add_executable(tkom2 ${SOURCE_FILES})
+set(SOURCE_FILES src/CppScanner.cpp src/CppScanner.h src/Token.cpp src/Token.h src/Parser.cpp src/Parser.h src/pr/Expression.cpp src/pr/Expression.h src/pr/OrExpression.cpp src/pr/OrExpression.h src/pr/AndExpression.cpp src/pr/AndExpression.h src/pr/CompExpression.cpp src/pr/CompExpression.h src/pr/Operator.cpp src/pr/Operator.h src/pr/Value.cpp src/pr/Value.h src/pr/VariableDeclaration.cpp src/pr/VariableDeclaration.h src/pr/Expressions.cpp src/pr/Expressions.h src/pr/IfExpression.cpp src/pr/IfExpression.h src/pr/FunctionCall.cpp src/pr/FunctionCall.h src/pr/FunctionDeclaration.cpp src/pr/FunctionDeclaration.h src/pr/ForExpression.cpp src/pr/ForExpression.h src/pr/BuildOrStaticExpression.cpp src/pr/BuildOrStaticExpression.h src/pr/VariableStack.cpp src/pr/VariableStack.h src/pr/FunctionStack.cpp src/pr/FunctionStack.h test/TokenTest.cpp test/CppScannerTest.cpp src/GraphNode.cpp src/GraphNode.h)
+add_executable(tkom2 src/main.cpp ${SOURCE_FILES})
+add_executable(tkomtest test/Tests.cpp ${SOURCE_FILES})
 
 if(Boost_FOUND)
 
-    target_link_libraries(tkom2 boost_unit_test_framework)
+    target_link_libraries(tkomtest boost_unit_test_framework)
 
 endif()
 

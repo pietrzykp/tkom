@@ -17,7 +17,7 @@ public:
         SQUARE_BRACKET_LEFT, SQUARE_BRACKET_RIGHT,
         ROUND_BRACKET_LEFT, ROUND_BRACKET_RIGHT,
         CURLY_BRACKET_LEFT, CURLY_BRACKET_RIGHT,
-        PARAMETER, IDENTIFIER, STRING, EOF_IDENT, ERROR
+        IDENTIFIER, STRING, EOF_IDENT, ERROR
     };
     Token(std::string s, Token::Type t, int lineN) {type = t; content = s; line = lineN;};
     Token() : type(Type::ERROR) {} ;

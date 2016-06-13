@@ -33,7 +33,6 @@ std::string Token::toString(Token::Type type){
         case Type::IN: return "in";
         case Type::NOT_EQUAL_OPER: return "!=";
         case Type::OR_OPER: return "||";
-        case Type::PARAMETER: return "parameter";
         case Type::SEMICOLON: return ";";
         case Type::SQUARE_BRACKET_LEFT:return "[";
         case Type::STATICLIB:return "staticlib";

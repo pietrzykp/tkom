@@ -283,7 +283,6 @@ std::shared_ptr<Value> Parser::readNonRecursiveValue(Token token) {
     switch(token.getType()) {
         case Token::Type::STRING:
             return std::shared_ptr<Value>(new Value(token.getContent(), false));
-        case Token::Type::PARAMETER:
         case Token::Type::IDENTIFIER:
             return std::shared_ptr<Value>(new Value(token.getContent(), true));
         case Token::Type::SQUARE_BRACKET_LEFT:
@@ -307,7 +306,6 @@ std::shared_ptr<Value> Parser::readNonArray(Token token) {
     switch(token.getType()) {
         case Token::Type::STRING:
             return std::shared_ptr<Value>(new Value(token.getContent(), false));
-        case Token::Type::PARAMETER:
         case Token::Type::IDENTIFIER:
             return std::shared_ptr<Value>(new Value(token.getContent(), true));
     }
@@ -319,7 +317,6 @@ std::shared_ptr<Value> Parser::readRecursiveValue() {
     switch(token.getType()) {
         case Token::Type::STRING:
             return std::shared_ptr<Value>(new Value(token.getContent(), false));
-        case Token::Type::PARAMETER:
         case Token::Type::IDENTIFIER:
             return std::shared_ptr<Value>(new Value(token.getContent(), true));
         case Token::Type::SQUARE_BRACKET_LEFT:

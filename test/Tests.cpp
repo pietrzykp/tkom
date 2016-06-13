@@ -1,4 +1,3 @@
-/*
 //
 // Created by paulina on 12.06.16.
 //
@@ -17,7 +16,7 @@ BOOST_AUTO_TEST_CASE(default_token_is_error) {
 }
 
 BOOST_AUTO_TEST_CASE(token_var) {
-    std::istringstream i("var for in if else def call build staticlib = && || == != ; , [ ] ( ) { } &1 jou 'jou'");
+    std::istringstream i("var for in if else def call build staticlib = && || == != ; , [ ] ( ) { } jou 'jou'");
     BOOST_TEST_MESSAGE("aaa");
     CppScanner c(i);
     int index = 0;
@@ -130,4 +129,3 @@ BOOST_AUTO_TEST_CASE(whole_build_example) {
     Resolver::dependencies.clear();
     Resolver::nodes.clear();
 }
-*/

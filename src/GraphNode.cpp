@@ -10,20 +10,6 @@ std::vector<std::shared_ptr<GraphNode> > Resolver::nodes;
 
 
 std::string Resolver::resolve() {
-    for (const auto &pair : dependencies) {
-        std::cout << pair.first << " " << pair.second << std::endl;
-    }
-    for(int i = 0; i < nodes.size(); ++i) {
-        std::cout<<i << ": ";
-        for(int j = 0; j < nodes[i]->graph.size(); ++j) {
-            std::cout<< nodes[i]->graph[j] << ", ";
-        }
-        std::cout<<std::endl;
-    }
-
-    std::vector<int> visited;
-    visited.resize(dependencies.size());
-    std::cout<<"Graph size : "<< visited.size() << std::endl;
     std::string s;
     for(int i = 0; i < dependencies.size(); ++i) {
         if(!checkCycles(i, s)) {

@@ -32,7 +32,7 @@ void CppScanner::readNextToken() {
     }
     if(tryStringToken()) //
         return;
-    if(tryParameterOrAnd())
+    if(tryAnd())
         return;
     if(tryOperator())
         return;
@@ -71,7 +71,7 @@ void CppScanner::ignoreWhitespacesAndComment() {
     }
 }
 
-bool CppScanner::tryParameterOrAnd() {
+bool CppScanner::tryAnd() {
     if(in && in.peek() == '&') {
         getNextChar();
         if(in && in.peek() == '&') {
@@ -79,14 +79,7 @@ bool CppScanner::tryParameterOrAnd() {
             token = Token("&&", Token::Type::AND_OPER, lineNumber);
             return true;
         }
-        if(!isdigit(in.peek()))
-            throwInvalidSyntax();
-        while(in && std::isdigit(in.peek()))
-            getNextChar();
-        if(std::isalnum(in.peek())|| in.peek() == '\'')
-            throwInvalidSyntax();
-        token = Token(read, Token::Type::PARAMETER, lineNumber);
-        return true;
+        throwInvalidSyntax();
     }
 }
 

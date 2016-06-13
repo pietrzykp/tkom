@@ -23,4 +23,4 @@ def buildWithFlags(list1, list2) {
 	}
 }
 
-call buildWithFlags2(['h.o', 'f.o'], ['bbb', ['aaa.tx', 'eee.txt']]);
+call buildWithFlags(['h.o', 'f.o'], ['bbb', ['aaa.tx', 'eee.txt']]);
