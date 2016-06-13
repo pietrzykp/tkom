@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/pr/Value.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/AndExpression.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/AndExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableDeclaration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/ForExpression.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionStack.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/BuildOrStaticExpression.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/CompExpression.h" isTestSource="false" />
@@ -21,7 +21,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/pr/Expression.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableStack.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/ForExpression.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/pr/ForExpression.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/Value.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/BuildOrStaticExpression.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/OrExpression.h" isTestSource="false" />
@@ -31,6 +30,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionCall.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/OrExpression.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/Operator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/pr/VariableDeclaration.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pr/FunctionStack.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Token.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Parser.h" isTestSource="false" />
@@ -42,9 +42,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Parser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Token.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/TokenTest.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/Tests.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/CppScannerTest.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
